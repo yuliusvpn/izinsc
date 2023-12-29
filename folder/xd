@@ -1,5 +1,5 @@
 #!/bin/bash
-REPO2="https://github.com/yuliusvpn/izinsc/raw/main/folder"
+REPO2="https://github.com/yuliusvpn/izinsc/raw/main/folder/"
 cd
 wget -q -O sc.zip "${REPO2}sc"
 unzip sc.zip
