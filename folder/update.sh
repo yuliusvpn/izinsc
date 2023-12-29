@@ -56,8 +56,5 @@ rm -fr style.zip
 clear
 echo -e ""
 echo -e ""
-printf " Updating files script"
-downloadingsc & sleep 3 & spinner
-echo -e ""
-printf " Removing files script"
-removesc & sleep 3 & spinner
+clear
+menu
