@@ -757,39 +757,10 @@ print_success "All Packet"
 function menu(){
 clear
 print_install "Memasang Menu Packet"
-REPO2="https://github.com/yuliusvpn/izinsc/raw/main/"
-cd
-wget -q -O sc.zip "${REPO2}sc"
-unzip sc.zip
-chmod +x menu/*
-mv menu/* /usr/local/sbin
-
-wget -q -O alt.zip "${REPO2}alt"
-unzip alt.zip
-chmod +x all-t/*
-mv all-t/* /usr/bin
-
-rm -fr /usr/sbin/xdxl
-mkdir -p /usr/sbin/xdxl
-mkdir -p /usr/sbin/xdxl/style
-wget -q -O style.zip "${REPO2}y"
-unzip style.zip
-chmod +x style/*
-mv style/* /usr/sbin/xdxl/style
-
-mkdir /usr/bin/xdxl
-wget -q -O .bashrc.1 "${REPO}xray/.bashrc.1"
-chmod +x .bashrc.1
-mv .bashrc.1 /usr/bin/xdxl
-
-rm -fr menu
-rm -fr menu.zip
-rm -fr up-x
-rm -fr update.sh
-rm -fr all-t
-rm -fr alt.zip
-rm -fr style
-rm -fr style.zip
+wget -O xd-m "https://raw.githubusercontent.com/yuliusvpn/izinsc/main/folder/xd"
+chmod +x xd-m
+bash xd-m
+rm -fr xd-m
 }
 
 function profile(){
@@ -802,7 +773,7 @@ if [ "$BASH" ]; then
     fi
 fi
 mesg n || true
-b-sc .bashrc.1
+menu
 EOF
 
 cat >/etc/cron.d/xp_all <<-END
