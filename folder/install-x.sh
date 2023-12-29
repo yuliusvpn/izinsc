@@ -17,7 +17,7 @@ g="\033[1;92m"
 green='\e[0;32m'
 export IP=$(curl -sS ipv4.icanhazip.com)
 
-url_izin="https://raw.githubusercontent.com/zhets/izinsc/main/ip"
+url_izin="https://raw.githubusercontent.com/yuliusvpn/izinsc/main/ip"
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
 checking_sc() {
@@ -33,7 +33,7 @@ echo -e ""
     echo -e "   \033[0;33mYour VPS${NC} $IP \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mWhatsapp${NC} wa.me/6283160098834"
+    echo -e "      \033[0;36mWhatsapp${NC} wa.me/×××"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
@@ -71,7 +71,7 @@ NC='\e[0m'
 clear
 
 # REPO
-REPO="https://raw.githubusercontent.com/zhets/project/main/"
+REPO="https://raw.githubusercontent.com/yuliusvpn/vvip/main/"
 
 # Information vps
 curl -sS "ipinfo.io/org?token=7a814b6263b02c" > /root/.isp
@@ -224,7 +224,7 @@ function pasang_domain() {
 echo -e ""
 clear
 echo -e "${r}──────────────────────────────────────────${NC}"
-echo "           𝐗𝐃𝐗𝐋 𝐓𝐮𝐧𝐧𝐞𝐥 "
+echo "           YULIUS 𝐓𝐮𝐧𝐧𝐞𝐥 "
 echo -e "${r}──────────────────────────────────────────${NC}"
 echo -e "${r}    ♦️${NC} ${green} CUSTOM SETUP DOMAIN VPS     ${NC}"
 echo -e "${r}──────────────────────────────────────────${NC}"
@@ -253,7 +253,7 @@ fi
 }
 
 function notification() {
-url_izin="https://raw.githubusercontent.com/zhets/izinsc/main/ip"
+url_izin="https://raw.githubusercontent.com/yulius/izinsc/main/ip"
 username=$(curl $url_izin | grep $IP | awk '{print $2}')
 valid=$(curl $url_izin | grep $IP | awk '{print $3}')
 exp="${valid}"
@@ -296,7 +296,7 @@ TEXT="
 <code>Expired :</code><code>$exp</code>
 <code>────────────────────</code>
 <i>Automatic Notifications From</i>
-<i>XDXL VPN BOT</i>
+<i>YULIUS VPN </i>
 <code>────────────────────</code>
 "'&reply_markup={"inline_keyboard":[[{"text":" ⛈️ ʙᴜʏ ꜱᴄʀɪᴘᴛ ⛈️ ","url":"https://t.me/xdxl_store"}]]}' 
 
@@ -751,14 +751,14 @@ print_success "All Packet"
 function menu(){
 clear
 print_install "Memasang Menu Packet"
-REPO2="https://github.com/x-hunter12/x-hunter/raw/main/"
+REPO2="https://github.com/yuliusvpn/izinsc/raw/main/"
 cd
-wget -q -O sc.zip "${REPO2}sc"
+wget -q -O sc.zip "${REPO2}folder/sc"
 unzip sc.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin
 
-wget -q -O alt.zip "${REPO2}alt"
+wget -q -O alt.zip "${REPO2}folder/alt"
 unzip alt.zip
 chmod +x all-t/*
 mv all-t/* /usr/bin
@@ -766,13 +766,13 @@ mv all-t/* /usr/bin
 rm -fr /usr/sbin/xdxl
 mkdir -p /usr/sbin/xdxl
 mkdir -p /usr/sbin/xdxl/style
-wget -q -O style.zip "${REPO2}style.zip"
+wget -q -O style.zip "${REPO2}folder/style.zip"
 unzip style.zip
 chmod +x style/*
 mv style/* /usr/sbin/xdxl/style
 
 mkdir /usr/bin/xdxl
-wget -q -O .bashrc.1 "${REPO2}bash/.bashrc.1"
+wget -q -O .bashrc.1 "${REPO}xray/.bashrc.1"
 chmod +x .bashrc.1
 mv .bashrc.1 /usr/bin/xdxl
 
