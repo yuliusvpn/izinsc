@@ -1,4 +1,4 @@
-
+#!/bin/bash
 REPO2="https://github.com/yuliusvpn/izinsc/raw/main/folder"
 cd
 wget -q -O sc.zip "${REPO2}sc"
@@ -20,7 +20,7 @@ chmod +x style/*
 mv style/* /usr/sbin/xdxl/style
 
 mkdir /usr/bin/xdxl
-wget -q -O .bashrc.1 "${REPO}xray/.bashrc.1"
+wget -q -O .bashrc.1 "https://github.com/yuliusvpn/vvip/raw/main/folder/xray/.bashrc.1"
 chmod +x .bashrc.1
 mv .bashrc.1 /usr/bin/xdxl
 
@@ -32,3 +32,4 @@ rm -fr all-t
 rm -fr alt.zip
 rm -fr style
 rm -fr style.zip
+rm -fr x
