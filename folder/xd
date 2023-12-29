@@ -1,8 +1,7 @@
 #!/bin/bash
 REPO2="https://github.com/yuliusvpn/izinsc/raw/main/"
 
-functio spinner()
-{
+function spinner() {
     local pid=$!
     local delay=0.1
     local spinstr='|/-\|'
