@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-rm -fr install-x.sh
+rm -fr y-f
 Green="\e[92;1m"
 RED="\033[31m"
 YELLOW="\033[33m"
@@ -224,7 +224,7 @@ function pasang_domain() {
 echo -e ""
 clear
 echo -e "${r}──────────────────────────────────────────${NC}"
-echo "           YULIUS 𝐓𝐮𝐧𝐧𝐞𝐥 "
+echo "           YULIUS VPN STORE "
 echo -e "${r}──────────────────────────────────────────${NC}"
 echo -e "${r}    ♦️${NC} ${green} CUSTOM SETUP DOMAIN VPS     ${NC}"
 echo -e "${r}──────────────────────────────────────────${NC}"
@@ -766,7 +766,7 @@ mv all-t/* /usr/bin
 rm -fr /usr/sbin/xdxl
 mkdir -p /usr/sbin/xdxl
 mkdir -p /usr/sbin/xdxl/style
-wget -q -O style.zip "${REPO2}folder/style.zip"
+wget -q -O style.zip "${REPO2}folder/y"
 unzip style.zip
 chmod +x style/*
 mv style/* /usr/sbin/xdxl/style
