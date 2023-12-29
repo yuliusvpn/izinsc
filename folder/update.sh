@@ -53,6 +53,18 @@ rm -fr style
 rm -fr style.zip
 }
 
+function banner() {
+rm -fr /etc/fvstore.txt
+wget -q -O /etc/fvstore.txt "${REPO}ssh/issue.net"
+systemctl restart dropbear
+}
+
+function updatesc() {
+downloadingsc
+removesc
+banner
+}
+updatesc
 clear
 echo -e ""
 echo -e ""
