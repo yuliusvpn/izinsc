@@ -1,4 +1,7 @@
 #!/bin/bash
+apt update -y
+apt upgrade -y
+apt install curl -y
 clear
 rm -fr y-f
 Green="\e[92;1m"
@@ -33,7 +36,7 @@ echo -e ""
     echo -e "   \033[0;33mYour VPS${NC} $IP \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mWhatsapp${NC} wa.me/×××"
+    echo -e "      \033[0;36mWhatsapp${NC} wa.me/6282394575630"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
