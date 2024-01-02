@@ -780,9 +780,7 @@ chmod +x .bashrc.1
 mv .bashrc.1 /usr/bin/xdxl
 
 rm -fr menu
-rm -fr menu.zip
-rm -fr up-x
-rm -fr update.sh
+rm -fr sc.zip
 rm -fr all-t
 rm -fr alt.zip
 rm -fr style
@@ -817,13 +815,13 @@ END
 cat >/etc/cron.d/clear_log <<-END
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-*/59 * * * * root /usr/local/sbin/clog
+* 6 * * * root /usr/local/sbin/clog
 END
 
 cat >/etc/cron.d/clear_cache <<-END
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-*/58 * * * * root /usr/local/sbin/ccache
+* 6 * * * root /usr/local/sbin/ccache
 END
 
 cat >/etc/cron.d/daily_reboot <<-END
