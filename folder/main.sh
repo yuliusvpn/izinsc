@@ -661,15 +661,15 @@ clear
 print_install "Menginstall ePro WebSocket Proxy"
 wget -q -O /usr/bin/ws-epro "${REPO2}ws-epro" >/dev/null 2>&1
 wget -q -O /usr/bin/tun.conf "${REPO2}tun.conf" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/ws-epro.service "${REPO2}ws-epro.service" >/dev/null 2>&1
-chmod +x /etc/systemd/system/ws-epro.service
+wget -q -O /etc/systemd/system/ws.service "${REPO2}ws-epro.service" >/dev/null 2>&1
+chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws-epro
 chmod 644 /usr/bin/tun.conf
-systemctl disable ws-epro
-systemctl stop ws-epro
-systemctl enable ws-epro
-systemctl start ws-epro
-systemctl restart ws-epro
+systemctl disable ws
+systemctl stop ws
+systemctl enable ws
+systemctl start ws
+systemctl restart ws
 wget -q -O /usr/local/share/xray/geosite.dat "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat" >/dev/null 2>&1
 wget -q -O /usr/local/share/xray/geoip.dat "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat" >/dev/null 2>&1
 wget -q -O /usr/sbin/ftvpn "${REPO}ws/ftvpn" >/dev/null 2>&1
