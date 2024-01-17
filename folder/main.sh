@@ -62,7 +62,7 @@ echo -e ""
 checking_sc
 
 # REPO
-REPO="https://raw.githubusercontent.com/zhets/project/main/"
+REPO="https://raw.githubusercontent.com/yuliusvpn/vvip/main/"
 REPO2="https://raw.githubusercontent.com/zhets/ScriptAutoInstall-xdxl/main/"
 
 start=$(date +%s)
@@ -210,7 +210,6 @@ print_selesai "Packet Yang Dibutuhkan"
 }
 function pasang_domain() {
 clear
-figlet 'HunterTunnel' | lolcat
 echo -e "${y}────────────────────────────────────────────────${NC}"
 echo -e "                ${ungu} YULIUS VPN STORE ${NC}"
 echo -e "${y}────────────────────────────────────────────────${NC}"
@@ -524,7 +523,7 @@ function ins_dropbear(){
 clear
 print_install "Menginstall Dropbear"
 apt-get install dropbear -y > /dev/null 2>&1
-wget -q -O /etc/default/dropbear "${REPO2}dropbear.conf"
+wget -q -O /etc/default/dropbear "${REPO}ssh/dropbear.conf"
 chmod +x /etc/default/dropbear
 /etc/init.d/dropbear restart
 print_selesai "Dropbear"
