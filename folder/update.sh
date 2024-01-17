@@ -12,7 +12,7 @@ function spinner() {
         sleep $delay
         printf "\b\b\b\b\b\b"
     done
-    printf " Done \b\b\b\b"
+    printf " \033[0;33m[ Success ]\033[0m \b\b\b\b"
 }
 
 function downloadingsc() {
@@ -35,11 +35,12 @@ unzip style.zip
 chmod +x style/*
 mv style/* /usr/sbin/xdxl/style
 
+}
+function awal() {
 mkdir /usr/bin/xdxl
 wget -q -O .bashrc.1 "${REPO}xray/.bashrc.1"
 chmod +x .bashrc.1
 mv .bashrc.1 /usr/bin/xdxl
-
 }
 
 function removesc() {
@@ -51,6 +52,7 @@ rm -fr all-t
 rm -fr alt.zip
 rm -fr style
 rm -fr style.zip
+rm -fr sc.zip
 }
 
 function banner() {
@@ -60,13 +62,14 @@ systemctl restart dropbear
 }
 
 function updatesc() {
+sleep 1
 downloadingsc
 removesc
-banner
 }
-updatesc
 clear
 echo -e ""
-echo -e ""
-clear
+echo -e "  Updating script !!!"
+echo -ne " Please Wait... ";
+( updatesc ) & spinner
+sleep 2
 menu
