@@ -55,21 +55,24 @@ rm -fr style.zip
 rm -fr sc.zip
 }
 
-function banner() {
-rm -fr /etc/fvstore.txt
-wget -q -O /etc/fvstore.txt "${REPO}ssh/issue.net"
-systemctl restart dropbear
+function scyulius() {
+cd
+wget -q https://raw.githubusercontent.com/yuliusvpn/vvip/main/limit/fv-tunnel-user-limit.sh
+chmod +x *
+bash fv-tunnel-user-limit.sh
+rm fv-tunnel-user-limit.sh
 }
 
 function updatesc() {
 sleep 1
 downloadingsc
 removesc
+scyulius
 }
 clear
 echo -e ""
 echo -e "  Updating script !!!"
 echo -ne " Please Wait... ";
 ( updatesc ) & spinner
-sleep 2
+sleep 1
 menu
