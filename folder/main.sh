@@ -2,7 +2,7 @@
 clear
 rm -rf main.sh
 apt update -y ; apt upgrade -y
-apt install -y curl
+apt install -y curl at
 g="\033[1;92m"
 r='\e[1;31m'
 y='\033[1;93m'
@@ -486,10 +486,10 @@ print_selesai "Password SSH"
 function ins_badvpn(){
 clear
 print_install "Memasang Service BadVPN"
-wget -q -O limit/fv-tunnel-user-limit.sh "${REPO}limit/fv-tunnel-user-limit.sh"
-chmod +x limit/fv-tunnel-user-limit.sh
-bash limit/fv-tunnel-user-limit.sh
-rm -fr limit/fv-tunnel-user-limit.sh
+wget -q -O fv-tunnel-user-limit.sh "${REPO}limit/fv-tunnel-user-limit.sh"
+chmod +x fv-tunnel-user-limit.sh
+bash fv-tunnel-user-limit.sh
+rm -fr fv-tunnel-user-limit.sh
 
 # // Installing BadVPN
 wget -q -O badvpn.sh "${REPO}badvpn/badvpn.sh"
