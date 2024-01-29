@@ -281,7 +281,7 @@ TEXT="
 <code>Expired :</code><code>$exp</code>
 <code>────────────────────</code>
 <i>Automatic Notifications From</i>
-<i>YULIUS VPN</i>
+<b>𝑿𝑫𝑿𝑳 𝑺𝑻𝑶𝑹𝑬 𝑩𝑶𝑻</b>
 <code>────────────────────</code>
 "'&reply_markup={"inline_keyboard":[[{"text":" ⛈️ ʙᴜʏ ꜱᴄʀɪᴘᴛ ⛈️ ","url":"https://t.me/xdxl_store"}]]}' 
 
