@@ -2,7 +2,7 @@
 clear
 rm -rf main.sh
 apt update -y ; apt upgrade -y
-apt install -y curl at
+apt install -y curl wget at
 g="\033[1;92m"
 r='\e[1;31m'
 y='\033[1;93m'
